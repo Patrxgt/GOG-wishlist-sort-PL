@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name         GOG Wishlist - Sort by Price (Dropdown)
-// @namespace    https://github.com/idkicarus
-// @homepageURL  https://github.com/idkicarus/GOG-wishlist-sort
-// @supportURL   https://github.com/idkicarus/GOG-wishlist-sort/issues
-// @description  Enables sorting by price (ascending and descending) via a dropdown option added to the GOG wishlist page. Switching between "sort by price" and a native sorting option (title, date added, user reviews) automatically refreshes the page twice. 
+// @name         GOG Wishlist - Sort by Price (Natywne menu) (PL)
+// @namespace    https://github.com/Patrxgt
+// @homepageURL  https://github.com/Patrxgt/GOG-wishlist-sort-PL
+// @supportURL   https://github.com/Patrxgt/GOG-wishlist-sort-PL/issues
+// @description  Skrypt umożliwiający sortowanie według ceny (rosnąco lub malejąco) za pomocą natywnego menu rozwijanego na stronie listy życzeń GOG. Przełączanie między opcją „Sortuj według ceny” a natywnymi opcjami sortowania (tytuł, data dodania, opinie użytkowników) powoduje automatyczne, dwukrotne odświeżenie strony.
 // @version      1.06
 // @license      MIT
 // @match        https://www.gog.com/account/wishlist*
 // @match        https://www.gog.com/*/account/wishlist*
 // @run-at       document-start
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/idkicarus/gog-wishlist-sort/main/gog-wishlist_sort-by-price_dropdown.user.js
-// @downloadURL  https://raw.githubusercontent.com/idkicarus/gog-wishlist-sort/main/gog-wishlist_sort-by-price_dropdown.user.js
+// @updateURL    https://raw.githubusercontent.com/Patrxgt/GOG-wishlist-sort-PL/main/gog-wishlist_sort-by-price_dropdown.user.js
+// @downloadURL  https://raw.githubusercontent.com/Patrxgt/GOG-wishlist-sort-PL/main/gog-wishlist_sort-by-price_dropdown.user.js
 // ==/UserScript==
 
 (function () {
@@ -231,14 +231,14 @@
         }
 
         if (currentDirection === "asc") {
-            customSortHeader.textContent = "Price ↑";
-            customSortHeader.title = "Currently sorted by price: low to high.";
+            customSortHeader.textContent = "Ceny ↑";
+            customSortHeader.title = "Obecnie posortowane według ceny: od najniższej do najwyższej.";
         } else if (currentDirection === "desc") {
-            customSortHeader.textContent = "Price ↓";
-            customSortHeader.title = "Currently sorted by price: high to low.";
+            customSortHeader.textContent = "Ceny ↓";
+            customSortHeader.title = "Obecnie posortowane według ceny: od najwyższej do najniższej.";
         } else {
-            customSortHeader.textContent = "Price";
-            customSortHeader.title = "Sort by price.";
+            customSortHeader.textContent = "Ceny";
+            customSortHeader.title = "Sortuj według ceny.";
         }
 
         customSortHeader.style.display = "inline-block";
