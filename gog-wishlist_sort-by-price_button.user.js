@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name         GOG Wishlist - Sort by Price (Button)
+// @name         GOG Wishlist - Sort by Price (Przycisk) (PL)
 // @namespace    https://github.com/idkicarus
-// @homepageURL  https://github.com/idkicarus/GOG-wishlist-sort
-// @supportURL   https://github.com/idkicarus/GOG-wishlist-sort/issues
-// @description  Enables sorting by price (ascending and descending) via a button added to the GOG wishlist page. Switching between "sort by price" and a native sorting option (title, date added, user reviews) automatically refreshes the page twice. 
+// @homepageURL  https://github.com/Patrxgt/GOG-wishlist-sort-PL
+// @supportURL   https://github.com/Patrxgt/GOG-wishlist-sort-PL/issues
+// @description  Skrypt umożliwiający sortowanie według ceny (rosnąco lub malejąco) za pomocą przycisku dodanego do strony listy życzeń na GOG. Przełączanie między opcją „Sortuj według ceny” a natywnymi opcjami sortowania (tytuł, data dodania, opinie użytkowników) powoduje automatyczne, dwukrotne odświeżenie strony.
 // @version      1.06
 // @license      MIT
 // @match        https://www.gog.com/account/wishlist*
 // @match        https://www.gog.com/*/account/wishlist*
 // @run-at       document-end
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/idkicarus/gog-wishlist-sort/main/gog-wishlist_sort-by-price_button.user.js
-// @downloadURL  https://raw.githubusercontent.com/idkicarus/gog-wishlist-sort/main/gog-wishlist_sort-by-price_button.user.js
+// @updateURL    https://raw.githubusercontent.com/Patrxgt/GOG-wishlist-sort-PL/main/gog-wishlist_sort-by-price_button.user.js
+// @downloadURL  https://raw.githubusercontent.com/Patrxgt/GOG-wishlist-sort-PL/main/gog-wishlist_sort-by-price_button.user.js
 // ==/UserScript==
 
 (function () {
@@ -77,14 +77,14 @@
 
     function updateSortButtonLabel(button, currentDirection = null) {
         if (currentDirection === "asc") {
-            button.textContent = "Sort by Price ↑";
-            button.title = "Currently sorted by price: low to high. Click again to sort high to low.";
+            button.textContent = "Sortowanie według ceny ↑";
+            button.title = "Obecnie sortowane według ceny: od najniższej do najwyższej. Kliknij ponownie, aby posortować od najwyższej do najniższej.";
         } else if (currentDirection === "desc") {
-            button.textContent = "Sort by Price ↓";
-            button.title = "Currently sorted by price: high to low. Click again to sort low to high.";
+            button.textContent = "Sortowanie według ceny ↓";
+            button.title = "Obecnie sortowane według ceny: od najwyższej do najniższej. Kliknij ponownie, aby posortować od najniższej do najwyższej.";
         } else {
-            button.textContent = "Sort by Price";
-            button.title = "Click to sort by price, low to high.";
+            button.textContent = "Sortuj według ceny";
+            button.title = "Kliknij, aby posortować według ceny, od najniższej do najwyższej.";
         }
     }
 
