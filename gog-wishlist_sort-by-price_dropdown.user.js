@@ -547,9 +547,9 @@
         const sortPriceOption = document.createElement("span");
         sortPriceOption.id = PRICE_OPTION_ID;
         sortPriceOption.className = "_dropdown__item";
-        sortPriceOption.textContent = "Price";
+        sortPriceOption.textContent = "Ceny";
         sortPriceOption.style.cursor = "pointer";
-        sortPriceOption.title = "Sort wishlist by price.";
+        sortPriceOption.title = "Sortuj listę życzeń według ceny.";
 
         sortPriceOption.addEventListener("click", event => {
             event.preventDefault();
