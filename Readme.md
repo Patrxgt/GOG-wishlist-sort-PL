@@ -5,10 +5,13 @@ Skrypty umożliwiające sortowanie gier według ceny (rosnąco lub malejąco) za
 
 
 ## Zrzuty ekranu
-![Wishlist dropdown](Images/dropdown-sort-ascending.png "Price sorting in wishlist dropdown menu")
+![Wishlist dropdown](Images/open-dropdown.png "Opcja sortowania cen na liście życzeń w natywnym rozwijanym menu")
+![Wishlist dropdown_asc](Images/dropdown-sort-ascending.png "Sortowanie cen na liście życzeń za pomocą natywnego rozwijanego menu (rosnąco)")
+![Wishlist dropdown_desc](Images/dropdown-sort-descending.png "Sortowanie cen na liście życzeń za pomocą natywnego rozwijanego menu (malejąco)")
 Podgląd dodanej pozycji w natywnym menu rozwijanym.
 
-![Wishlist button](Images/button-sort-ascending.png "Price sorting as separate button")
+![Wishlist button_asc](Images/button-sort-ascending.png "Sortowanie cen na liście życzeń za pomocą przycisku (rosnąco)")
+![Wishlist button_desc](Images/button-sort-descending.png "ortowanie cen na liście życzeń za pomocą przycisku (malejąco)")
 Podgląd dodanego przycisku.
 
 
